@@ -1,0 +1,161 @@
+header {
+  padding: 2rem 4rem;
+}
+
+.order-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.order-section .orders {
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+.order-section .orders .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-section .orders .number span {
+  padding: .3rem .5rem;
+  background-color: #f8d4d4;
+  display: block;
+  border-radius: 1rem;
+}
+
+.order-section .orders .number button {
+  background-color: orange;
+}
+
+.order-section .orders .products-in-cart {
+  width: 100%;
+  padding: 1rem;
+}
+
+.order-section .orders .products-in-cart table {
+  width: 100%;
+}
+
+.order-section .orders .products-in-cart table thead tr th {
+  padding: 1rem .5rem;
+  font-family: sans-serif;
+  text-align: inherit;
+}
+
+.order-section .orders .products-in-cart table tbody tr td {
+  font-family: sans-serif;
+  padding: 2rem .5rem;
+}
+
+.order-section .orders .products-in-cart table tbody tr td i {
+  cursor: pointer;
+  font-size: .5rem;
+}
+
+.order-section .orders .products-in-cart table tbody tr .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.order-section .orders .products-in-cart table tbody tr .product img {
+  height: 6rem;
+  width: 5rem;
+}
+
+.order-section .orders .products-in-cart table tbody tr .product .product-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-section .orders .products-in-cart table tbody tr .product .product-name span i {
+  color: gold;
+  font-size: .7rem;
+}
+
+.order-section .orders .products-in-cart table tbody tr .product .product-name div {
+  font-family: sans-serif;
+  padding: .5rem 0;
+  font-size: .8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .order-section .orders {
+    padding: 2rem 4rem;
+  }
+  .order-section .orders .products-in-cart {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .order-section .orders .products-in-cart table {
+    width: 100%;
+  }
+  .order-section .orders .products-in-cart table thead tr th {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: .5rem;
+    font-family: sans-serif;
+  }
+  .order-section .orders .products-in-cart table tbody tr td {
+    font-family: sans-serif;
+    padding: 1rem .5rem;
+  }
+  .order-section .orders .products-in-cart table tbody tr .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order-section .orders .products-in-cart table tbody tr .product img {
+    height: 9rem;
+    width: 8rem;
+  }
+  .order-section .orders .products-in-cart table tbody tr .product .product-name {
+    padding: 1rem;
+  }
+  .order-section .orders .products-in-cart table tbody tr .product .product-name span i {
+    color: gold;
+    font-size: .7rem;
+  }
+  .order-section .orders .products-in-cart table tbody tr .product .product-name div {
+    font-family: sans-serif;
+    padding: .5rem 0;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=myOrders.css.map */

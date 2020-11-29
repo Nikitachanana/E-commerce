@@ -1,0 +1,418 @@
+@import "variables";
+
+
+header {
+    display: grid;
+    .category {
+        display: block;
+        .women-fashion {
+            grid-area: one;
+            margin-bottom: .5rem;
+            padding: 10rem 1.5rem;
+            background-image: url("../assets/category-1.jpg");
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+        .men-fashion{
+            grid-area: two;
+            background-position: center;
+            margin-bottom: .5rem;
+             background-image: url('../assets/category-2.jpg');
+             padding: 5rem 1.5rem;
+             display: flex;
+             flex-direction: column;
+             background-size: cover;
+             
+            
+        }
+        .kids-fashion{
+            grid-area: three;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: .5rem;
+             background-image: url('../assets/category-3.jpg');
+             padding: 5rem 1.5rem;
+             display: flex;
+             flex-direction: column;
+                 
+        }
+        .cosmetics{
+            grid-area: four;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: .5rem;
+             background-image: url('../assets/category-4.jpg');
+             padding: 5rem 1.5rem;
+             display: flex;
+             flex-direction: column;
+                 
+        }
+        .accesories{
+            grid-area: five;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: .5rem;
+             background-image: url('../assets/category-5.jpg');
+             padding: 5rem 1.5rem;
+             display: flex;
+             flex-direction: column;
+                 
+        }
+    }
+}
+
+.new-products{
+    padding: 1rem;
+    .new-products-nav{
+        display: flex;
+        flex-direction: column;
+        
+        ul{
+            margin: 1.5rem 0;
+            justify-content: space-between;
+            width: 100%;
+            display: flex;
+            list-style: none;
+            li{
+                font-size: 1rem;
+                cursor: pointer;
+                
+            }
+            li:hover{
+                border-bottom: 2px solid $red;
+
+            }
+           
+        }
+    }
+    .products{
+        display: grid;
+        width: 100%;
+        .product{
+            position: relative;
+            width: 100%;
+            figure{
+                width: 100%;
+                img{
+                    
+                    width: 100%;
+                    height: 360px;
+                }
+            }
+            .tag{
+                left: .3rem;
+                bottom: 26rem;
+                position: absolute;
+                color: white;
+                padding: .2rem .5rem;
+            }
+            .new-tag{
+                background-color:rgb(54,163,0);
+            }
+            .oos-tag{
+                background-color: black;
+            }
+            .sale-tag{
+                background-color: rgb(207, 1, 1);
+            }
+            .description{
+                width: 100%;
+                align-items: center;
+                p,h3{
+                    padding: .5rem;
+                    color: black;
+                    width: 100%;
+                    text-align: center;
+                }
+                span{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    
+                    i{
+                        font-size: .8rem;
+                        color: gold;
+                    }
+                }
+                
+            }
+        }
+
+    }
+}
+.offers{
+    background-color: whitesmoke;
+    background-image: url("../assets/banner-1.jpg");
+    padding: 1rem;
+    background-position: center;
+    background-size: cover;
+   
+    .banner{
+        display: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 1rem;
+        h3{
+            text-align: center;
+            color:$red;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        a{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        a:after{
+            position: absolute;
+            left: 5.6rem;
+            bottom: .8rem;
+            height: 2px;
+            width: 70px;
+            background: $red;
+            content: "";
+
+            
+        }
+
+    }
+    .dots{
+        width: 100%;
+        padding: .5rem;
+        text-align: center;
+        .dot{
+            display: inline-block;
+            height: .5rem;
+            width: .5rem;
+            border-radius: .5rem;
+            background-color: grey;
+        }
+        .active{
+            background-color:$red;
+        }
+    }
+   .move{
+       animation-name: move;
+       animation-duration: 1.5s;
+   }
+   @keyframes move {
+       from{padding-left: 15%;opacity: 0;}
+       to{padding-left: 0;opacity: .3;}
+       
+   }
+}
+.trend{
+    display: grid;
+    padding: 1rem;
+    .hot{
+        align-items: flex-start;
+        h2{
+            position: relative;
+        }
+        h2:after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 70%;
+            left: 0;
+            background-color: $red;
+            bottom: 0;
+
+        }
+        
+
+    }
+    .items-wrapper{
+        width: 80%;
+        padding: 2rem .5rem;
+        display: grid;
+        grid-gap: 1rem;
+        .item{
+            display: flex;
+            .details{
+                display: flex;
+                flex-direction: column;
+                span,h4{
+                    font-family: sans-serif;
+                    font-size: 1.2rem;
+                    padding: .3rem 1rem;
+                    i{
+                        font-size: .6rem;
+                        color: gold;
+                    }
+                }
+            }
+        }
+       
+    }
+   
+}
+.discount{
+    display: grid;
+    figure{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .countdown{
+        padding: 1.5rem 0 3rem 0;
+        background-color: rgb(226, 222, 222);
+        .discount-text{
+            z-index: 1;
+            position: relative;
+            width: 100%;
+            align-items: center;
+            padding: 4rem 2rem;
+            span{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            h2{
+                width: 100%;
+                text-align: center;
+                font-family: $dancing;
+                color:$red;
+            }
+            .sale{
+                font-weight: bold;
+                color:$red;
+                span{
+                    font-weight: lighter;
+                    display: inline;
+                    color: black;
+                }
+            }
+            
+        }
+        .discount-text:after{
+            position: absolute;
+            left: 33%;
+            top: 38px;
+            height: 8rem;
+            width: 8rem;
+            background-color: white;
+            content: "";
+            border-radius: 50%;
+            z-index: -1;
+           
+        }
+        .countdown-timer{
+            padding: 0 0 1rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            .time{
+                font-family: sans-serif;
+                    font-weight: normal;
+                    font-size: 1.2rem;
+                
+                span{
+                    font-weight: bold;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .shop-now{
+            position: relative;
+            display: block;
+            width: 100%;
+            text-align: center;
+           
+        }
+        .shop-now:after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 23%;
+            background-color:$red;
+            left: 38%;
+            top: 1.5rem;
+
+
+        }
+    }
+}
+.services{
+    padding: 2rem 1rem;
+    align-items: flex-start;
+    .service{
+        margin: 1rem 0;
+        display: flex;
+        i{
+            font-size: 2.5rem;
+            color:$red ;
+        }
+        .service-details{
+            padding: .3rem 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+@media screen and (min-width:1024px){
+    
+    header{
+        .category{
+            display:grid;
+            grid-column-gap: .5rem;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-areas: "one two three"
+                                "one four five";
+            .women-fashion{
+                padding: 10rem 1rem 10rem 4rem;
+            }
+        }
+    }
+    .new-products{
+        padding: 1rem 4rem;
+        .new-products-nav{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .products{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .trend{
+        padding: 2rem 4rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+   
+    .discount{
+        padding: 2rem 4rem;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
+        figure{
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
+        .countdown{
+            .discount-text:after{
+                
+                left: 38%;
+               
+            }
+        }
+    }
+    .services{
+        padding: 2rem 4rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+}

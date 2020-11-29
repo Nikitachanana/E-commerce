@@ -1,0 +1,279 @@
+@font-face {
+  font-family: mainFont;
+  src: url(../assets/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: dancing;
+  src: url(../assets/DancingScript-VariableFont_wght.ttf);
+}
+
+header {
+  padding: 1rem;
+}
+
+header span {
+  cursor: pointer;
+}
+
+header span i {
+  font-family: sans-serif;
+  font-style: initial;
+  padding-right: .3rem;
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+main .filter {
+  grid-area: one;
+}
+
+main .filter h2 {
+  font-size: 1.1rem;
+  position: relative;
+  padding-top: 2rem;
+}
+
+main .filter .activeFilters {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: .5rem;
+}
+
+main .filter .activeFilters .applied {
+  margin: .2rem;
+  color: black;
+  background-color: #cfcff0;
+  border-radius: 1rem;
+  border: 1px solid #bd0505;
+  padding: .3rem;
+  font-size: .8rem;
+}
+
+main .filter .activeFilters .applied i {
+  font-size: .8rem;
+  color: black;
+  padding: 0 .2rem;
+  cursor: pointer;
+}
+
+main .filter .activeFilters .applied i:after {
+  display: none;
+}
+
+main .filter h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 6rem;
+  left: 0;
+  background-color: red;
+  bottom: 0;
+}
+
+main .filter .filter-categories {
+  cursor: pointer;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: .5rem 0;
+}
+
+main .filter .filter-categories span {
+  font-size: 1rem;
+}
+
+main .filter .categories-list {
+  display: none;
+  padding: 0 .5rem;
+}
+
+main .filter .categories-list article {
+  position: relative;
+  font-family: sans-serif;
+  padding: .5rem .3rem;
+}
+
+main .filter .categories-list article:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: .5rem;
+  background-color: grey;
+  left: -.5rem;
+  bottom: 1rem;
+}
+
+main .filter .active {
+  display: block;
+}
+
+main .filter .filter-categories:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #d4cbcb;
+  top: 2rem;
+  margin: .3rem 0;
+}
+
+main .filter .filter-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+main .filter .filter-table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
+
+main .filter .filter-table tr td {
+  font-family: sans-serif;
+  padding: .2rem 0;
+}
+
+main .filter .filter-table tr td input {
+  margin-right: 1rem;
+}
+
+main .new-products {
+  grid-area: two;
+  padding: 1rem;
+}
+
+main .new-products .products {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+}
+
+main .new-products .products .product {
+  position: relative;
+  width: 100%;
+}
+
+main .new-products .products .product figure {
+  width: 100%;
+}
+
+main .new-products .products .product figure img {
+  width: 100%;
+  height: 40vh;
+}
+
+main .new-products .products .product .tag {
+  left: .3rem;
+  bottom: 26rem;
+  position: absolute;
+  color: white;
+  padding: .2rem .5rem;
+}
+
+main .new-products .products .product .new-tag {
+  background-color: #36a300;
+}
+
+main .new-products .products .product .oos-tag {
+  background-color: black;
+}
+
+main .new-products .products .product .sale-tag {
+  background-color: #bd0505;
+}
+
+main .new-products .products .product .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .new-products .products .product .description p, main .new-products .products .product .description h3 {
+  padding: .5rem;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+main .new-products .products .product .description span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+main .new-products .products .product .description span i {
+  font-size: .8rem;
+  color: gold;
+}
+
+.pagination {
+  display: block;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pagination span {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: .75rem 1rem;
+}
+
+.pagination span:hover {
+  cursor: pointer;
+  background-color: rgba(112, 112, 209, 0.466);
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 1rem 4rem;
+  }
+  main {
+    grid-gap: 3rem;
+    padding: 1rem 4rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: "one two";
+  }
+  main .new-products .products {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+/*# sourceMappingURL=men.css.map */

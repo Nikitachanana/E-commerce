@@ -1,0 +1,207 @@
+@import "variables";
+
+header {
+    padding: 1rem;
+
+    span {
+        // font-family: sans-serif;
+        
+        cursor: pointer;
+
+        i {
+            font-family: sans-serif;
+            font-style: initial;
+            padding-right: .3rem;
+            font-size: 1.1rem;
+        }
+    }
+}
+main{
+    padding: 1rem;
+    .product-images{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 1rem;
+        .products-images-small{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-rows:auto auto auto;
+            figure{
+                width: 100%;
+                height: auto;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .product-image-large{
+            position: relative;
+            figure{
+                width: 100%;
+                height: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+              
+            }
+            .right{
+                position: absolute;
+                background-color: whitesmoke;
+                padding: .6rem 1rem;
+                border-radius: 1rem;
+                top: 50%;
+                right: 1rem;
+            }
+            .left{
+                position: absolute;
+                background-color: whitesmoke;
+                padding: .6rem 1rem;
+                border-radius: 1rem;
+                top: 50%;
+                left: 1rem;
+    
+            }
+        }
+       
+    }
+    .product-description{
+        h2{
+            font-family: sans-serif;
+            padding: 1rem 0;
+        }
+        h3{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            color: $red;
+        }
+        span{
+            i{
+                color: gold;
+                font-size: .7rem;
+            }
+        }
+        .cart{
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            span{
+                font-size: 1.2rem;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+            .quantity{
+                margin: 0 .5rem;
+                border-radius: 1.5rem;
+                padding: .5rem 1rem;
+                border: 1px solid black;
+                i{
+                    padding:0 .5rem ;
+                    color: black;
+                    border: 0;
+                }
+            }
+            i{
+                padding: .5rem .5rem;
+                border: 1px solid black;
+                border-radius: 1.5rem;
+                margin: 0 .5rem;
+            }
+            
+        }
+        .availability{
+            span{
+                display: block;
+                padding: .5rem;
+                i{
+                    color: black;
+                    padding: 0 .5rem;
+                    font-size: 1rem;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+.review{
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    .contents{
+        display: flex;
+        width: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        span{
+            display: block;
+            font-size: 1.2rem;
+            padding: .5rem 1rem;
+            font-family: $font;
+            cursor: pointer;
+        }
+    }
+    .content-text{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:1024px){
+    header{
+        padding: 1rem 4rem;
+    }
+    main{
+        padding: 1rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+        .product-images{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 1rem;
+            
+            .products-images-small{
+                height: 100%;
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-rows: auto auto auto;
+                
+                figure{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        height:100% ;
+                        width: 100%;
+                    }
+                }
+            }
+
+    }
+}
+.review{
+    width: 100%;
+    align-items: center;
+    padding: 2rem 4rem;
+    .contents{
+        display: flex;
+        width: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        span{
+            display: block;
+            font-size: 1.5rem;
+            padding: .5rem 1rem;
+            font-family: $font;
+            cursor: pointer;
+        }
+    }
+    .content-text{
+        display: flex;
+        flex-direction: column;
+    }
+}
+}

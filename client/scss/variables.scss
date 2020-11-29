@@ -1,0 +1,13 @@
+@font-face{
+    font-family: mainFont;
+    src: url(../assets/Pacifico-Regular.ttf);
+}
+@font-face{
+    font-family: dancing;
+    src: url(../assets/DancingScript-VariableFont_wght.ttf);
+}
+
+$font : mainFont;
+$dancing: dancing;
+$paraColor: rgb(100, 98, 98);
+$red: rgb(189, 5, 5)

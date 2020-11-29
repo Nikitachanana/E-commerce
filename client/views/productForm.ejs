@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../scss/theme.css">
+    <link rel="stylesheet" href="../scss/productform.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">      
+    <title>Shein-Login</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <figure onclick="window.location.href= '/'"><img src="../assets/shein-logo.png" alt=""></figure>
+        <div class="bars"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </nav>
+    <section class="navigation">
+        <figure onclick="window.location.href= '/'"><img src="../assets/shein-logo.png" alt=""></figure>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/women/1">Women</a></li>
+            <li><a href="/men/1">Men</a></li>
+            <li><a href="/men">Shop</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="nav-contents">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="log-in">
+            <form action="/product-save" method="POST" enctype="multipart/form-data">
+            <section class="input-container">
+                <h2>Shein-Login</h2>
+                <input placeholder="Product Name" type="text" name="name" id="">
+                <input placeholder="Product Brand" type="text" name="brand" id="">
+                <input placeholder="Category" type="text" name="category" id="">
+                <input placeholder="Price" type="number" name="price" id="">
+                <input placeholder="Stock Count" type="number" name="stock" id="">
+                <input placeholder="Ratings" type="number" name="ratings" id="">
+                <input placeholder="image" type="file" name="image" id="">
+                <textarea placeholder="Description" name="description" id="" ></textarea>
+                <input type="number" name="numReviews" id="" placeholder="Number of Reviews">
+                <button>Okay</button>
+            </section>
+        </form>
+        </div>
+
+    </section>
+  </div>
+    
+</body>
+</html>

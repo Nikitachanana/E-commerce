@@ -1,0 +1,175 @@
+@font-face {
+  font-family: mainFont;
+  src: url(../assets/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: dancing;
+  src: url(../assets/DancingScript-VariableFont_wght.ttf);
+}
+
+header {
+  padding: 1rem;
+}
+
+header span {
+  cursor: pointer;
+}
+
+header span i {
+  font-family: sans-serif;
+  font-style: initial;
+  padding-right: .3rem;
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+main .billing-details {
+  padding: 2rem 0;
+}
+
+main .billing-details h2 {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+main .billing-details .inputs .input-details {
+  width: 100%;
+}
+
+main .billing-details .inputs .input-details label {
+  font-size: .8rem;
+  display: block;
+  font-family: sans-serif;
+}
+
+main .billing-details .inputs .input-details input {
+  margin: .5rem 0;
+  width: 100%;
+  padding: .75rem 1rem;
+  border: 1px solid #dad9d9;
+}
+
+main .billing-details .account-details .input-2 label {
+  font-family: sans-serif;
+  font-size: .8rem;
+  padding-left: .5rem;
+}
+
+main .billing-details .account-details .input-2 input {
+  margin: .5rem 0;
+  width: 100%;
+  padding: .5rem 1rem;
+}
+
+main .billing-details .account-details .input-details {
+  width: 100%;
+}
+
+main .billing-details .account-details .input-details label {
+  margin: .5rem 0;
+  font-size: .8rem;
+  display: block;
+  font-family: sans-serif;
+}
+
+main .billing-details .account-details .input-details input {
+  margin: .5rem 0;
+  width: 100%;
+  padding: .75rem 1rem;
+  border: 1px solid #dad9d9;
+}
+
+main .total-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  background-color: whitesmoke;
+}
+
+main .total-details h3 {
+  font-family: sans-serif;
+}
+
+main .total-details table {
+  width: 100%;
+}
+
+main .total-details table tr th {
+  padding: 1rem 0;
+  text-align: inherit;
+}
+
+main .total-details table tbody tr td {
+  padding: .5rem .5rem .5rem 0;
+  font-family: sans-serif;
+}
+
+main .total-details .payment {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem 1rem 1rem 0;
+}
+
+main .total-details .payment section {
+  padding: 1rem 0 .5rem;
+  font-family: sans-serif;
+}
+
+main .total-details .total-bill {
+  margin-top: .5rem;
+  width: 100%;
+}
+
+main .total-details .total-bill tr td {
+  padding: .5rem 0;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+main .total-details button {
+  margin: 1rem 0;
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 1rem 4rem;
+  }
+  main {
+    padding: 1rem 4rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+  }
+  main .billing-details .inputs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+/*# sourceMappingURL=checkout.css.map */

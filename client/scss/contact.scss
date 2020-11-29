@@ -1,0 +1,99 @@
+@import "variables";
+
+header {
+    padding: 1rem;
+
+    span {
+        // font-family: sans-serif;
+        font-size: 1.3rem;
+        cursor: pointer;
+
+        i {
+            font-family: sans-serif;
+            font-style: initial;
+            padding-right: .3rem;
+        }
+    }
+}
+main{
+    padding: 1rem;
+    .contact-info{
+        h2{
+            padding: 1rem 0;
+        }
+        .info{
+            padding: .5rem 0;
+            span{
+                font-size: 1.1rem;
+                font-family: sans-serif;
+                i{
+                    padding-right: 1rem;
+                    color:$red;
+                }
+            }
+            p{
+                padding: .5rem 0;
+            }
+            
+        }
+        .input{
+            width: 100%;
+            margin: .5rem 0;
+            input,textarea{
+                padding: .5rem 1rem;
+                width: 100%;
+                border-radius: .5rem;
+                border: 1px solid black;
+            }
+            
+        }
+        button{
+            padding: .5rem 1rem;
+            background-color: $red;
+            color: white;
+            border-radius: 1rem;
+            border: none;
+        }
+    }
+    .map{
+        width: 100%;
+        padding: 1rem;
+        height: 80vh;
+        figure{
+            img{
+                height: 80vh;
+                width: 100%;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width:1024px){
+    header{
+        padding: 1rem 4rem;
+    }
+    main{
+        padding: 1rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        .contact-info{
+            .input{
+                input,textarea{
+                    font-size: 1.1rem;
+                    padding: 1rem;
+                }
+                
+            }
+        }
+        .map{
+            height: 100%;
+            figure{
+                height: 100%;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
