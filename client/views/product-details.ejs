@@ -24,7 +24,7 @@
                     class="dropdown mobile btn-default"><%=userData.name.split(" ")[0]%><i class="fa fa-angle-down"
                         aria-hidden="true"></i></button>
                 <ul class="mobile-list list">
-                    <li><a href="">Profile</a></li>
+                    <li><a href="/profile">Profile</a></li>
                     <li><a href="/wishlist">Wishlist</a></li>
                     <li><a href="/cart">Cart</a></li>
                     <li onclick="Logout()">Logout</li>
@@ -61,7 +61,7 @@
                 <%if(user){%>
                     <button onclick="showDropdown()" style="text-transform: capitalize;" class="dropdown btn-default"><%=userData.name.split(" ")[0]%> <i class="fa fa-angle-down" aria-hidden="true"></i> </button>
                 <ul class="laptop-list list">
-                    <li><a href="">Profile</a></li>
+                    <li><a href="/profile">Profile</a></li>
                     <li><a href="/wishlist">Wishlist</a></li>
                     <li><a href="/cart">Cart</a></li>
                     <li onclick="Logout()">Logout</li>
@@ -228,6 +228,7 @@
             var dropdownlist = document.querySelector(".laptop-list")
             dropdownlist.classList.toggle('showDropdown')
         }
+        setTimeout(function () {document.querySelector(".message").style.display='none'}, 3000); 
     </script>
     </body>
     </html>

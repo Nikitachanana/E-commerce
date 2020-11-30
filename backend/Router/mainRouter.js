@@ -33,6 +33,10 @@ router.route("/change-password").post(mainControlller.changepassword)
 router.route("/orders").get(mainControlller.authorizeToken,mainControlller.myOrders)
 router.route("/payments-page").get(mainControlller.authorizeToken, OtpController.paymentPage)
 router.route("/payment").post(mainControlller.authorizeToken,OtpController.charge)
+router.route("/profile").get(mainControlller.authorizeToken, mainControlller.profile)
+router.route("/edit-profile").post(mainControlller.authorizeToken,upload.single("image"), mainControlller.editProfile)
+
+
 
 module.exports= router;
 

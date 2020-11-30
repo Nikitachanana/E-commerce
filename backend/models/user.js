@@ -15,11 +15,18 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    image:{
+        type:String
+    },
     cart:[{ type: mongoose.Schema.ObjectId, ref: 'Product' }],
     wishlist: [{ type: mongoose.Schema.ObjectId, ref: 'Product' }],
-    order:[{type:mongoose.Schema.ObjectId, ref:'order'}]
-
-
-
+    order:[{type:mongoose.Schema.ObjectId, ref:'order'}],
+    DOB:{
+        type:Date
+    },
+    gender:{
+        type:String
+    },
+    phone:{type:String}
 })
 module.exports = mongoose.model("users",userSchema)

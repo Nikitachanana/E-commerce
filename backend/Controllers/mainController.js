@@ -133,6 +133,7 @@ const changepassword =async (req,res)=>{
       res.redirect("/login")
   })
 }
+
 //  ################################
 // ############ Women Page(filter) #########
 // #################################
@@ -527,6 +528,54 @@ const cart=async (req,res)=>{
   })
 }
 //  ################################
+// ############Profile #########
+// #################################
+const profile =(req,res)=>{
+  internet().then(async ()=>{
+    const userData = await user.findOne({_id:req.user.id})
+    console.log(userData)
+    res.render("Profile",{user:req.user,userData:userData,success:req.flash('success'),error:req.flash("error")})
+  })
+}
+
+//  ################################
+// ############ Manage Profile #########
+// #################################
+const editProfile=(req,res)=>{
+  internet().then(async ()=>{
+    console.log(req.file)
+    if(req.file){
+      var filename;
+      const file = req.file.path;
+      cloudinary.uploader.upload(file).then(async result=>{
+      filename = result.url;
+      await user.updateOne({_id:req.user.id},{
+        name:req.body.name,
+        email:req.body.name,
+        phone:req.body.number,
+        DOB:req.body.DOB,
+        image:filename
+      })
+      req.flash("success","Profile Updated Successfully")
+      res.redirect("/")
+    })
+  }else{
+    user.updateOne({_id:req.user.id},{
+      name:req.body.name,
+      email:req.body.name,
+      phone:req.body.number,
+      DOB:req.body.DOB,
+    }).then((result)=>{
+      req.flash("success","Profile Updated Successfully")
+      res.redirect("/")
+    }
+
+    )
+
+  }
+  })
+}
+//  ################################
 // ############ Wishlist Page #########
 // #################################
 
@@ -861,6 +910,8 @@ module.exports = {
     sendOTP:sendOTP,
     changepassword:changepassword,
     authcheck:authcheck,
-    myOrders:myOrders
+    myOrders:myOrders,
+    profile:profile,
+    editProfile:editProfile
    
 }
