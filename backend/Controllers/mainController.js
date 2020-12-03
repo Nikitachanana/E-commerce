@@ -14,7 +14,7 @@ var Secret_Key = 'sk_test_51HsPbgFnuI1DuUy9BjnMvxKCZQHxp5mcA1U0dLH0Bobv8an4Ea7ar
 const stripe = require('stripe')(Secret_Key);
 
 //  ################################
-// ############ Email SEttings #########
+// ############ Email SEttings ########
 // #################################
 
 var transporter = nodemailer.createTransport({
