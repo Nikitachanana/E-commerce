@@ -67,8 +67,10 @@ header {
 .new-products{
     padding: 1rem;
     .new-products-nav{
+        padding: 2rem 0;
         display: flex;
         flex-direction: column;
+        
         
         ul{
             margin: 1.5rem 0;
@@ -97,9 +99,8 @@ header {
             figure{
                 width: 100%;
                 img{
-                    
                     width: 100%;
-                    height: 55vh;
+                    height: 30rem;
                 }
             }
             .tag{
@@ -380,11 +381,21 @@ header {
             justify-content: space-between;
             align-items: center;
         }
+        .products{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
+            .product{
+                figure{
+                    img{
+                        height: 25rem;
+                    }
+        
+                }
+            }
+            
+        }
     }
-    .products{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 1rem;
-    }
+    
     .trend{
         padding: 2rem 4rem;
         grid-template-columns: 1fr 1fr 1fr;

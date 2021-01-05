@@ -1,11 +1,11 @@
 @font-face {
   font-family: mainFont;
-  src: url(../assets/Pacifico-Regular.ttf);
+  src: url(../assets/NotoSansJP-Bold.otf);
 }
 
 @font-face {
   font-family: dancing;
-  src: url(../assets/DancingScript-VariableFont_wght.ttf);
+  src: url(../assets/NotoSansJP-Medium.otf);
 }
 
 .main-container {

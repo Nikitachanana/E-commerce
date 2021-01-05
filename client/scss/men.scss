@@ -156,7 +156,7 @@ main {
                     width: 100%;
                     img{
                         width: 100%;
-                        height: 55vh;
+                        height: 30rem;
                     }
                 }
                 .tag{
@@ -234,6 +234,13 @@ main {
             .products{
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-gap: 1rem;
+                .product{
+                    figure{
+                        img{
+                            height: 25rem;
+                        }
+                    }
+                }
                 
             }
         }

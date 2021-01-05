@@ -1,11 +1,11 @@
 @font-face {
   font-family: mainFont;
-  src: url(../assets/Pacifico-Regular.ttf);
+  src: url(../assets/NotoSansJP-Medium.otf);
 }
 
 @font-face {
   font-family: dancing;
-  src: url(../assets/DancingScript-VariableFont_wght.ttf);
+  src: url(../assets/NotoSansJP-Medium.otf);
 }
 
 header {
@@ -103,6 +103,7 @@ header .category .accesories {
 }
 
 .new-products .new-products-nav {
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +151,7 @@ header .category .accesories {
 
 .new-products .products .product figure img {
   width: 100%;
-  height: 55vh;
+  height: 30rem;
 }
 
 .new-products .products .product .tag {
@@ -512,10 +513,13 @@ header .category .accesories {
         -ms-flex-align: center;
             align-items: center;
   }
-  .products {
+  .new-products .products {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
+  }
+  .new-products .products .product figure img {
+    height: 25rem;
   }
   .trend {
     padding: 2rem 4rem;

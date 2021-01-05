@@ -1,11 +1,11 @@
 @font-face {
   font-family: mainFont;
-  src: url(../assets/Pacifico-Regular.ttf);
+  src: url(../assets/NotoSansJP-Medium.otf);
 }
 
 @font-face {
   font-family: dancing;
-  src: url(../assets/DancingScript-VariableFont_wght.ttf);
+  src: url(../assets/NotoSansJP-Medium.otf);
 }
 
 header {
@@ -39,6 +39,7 @@ header span i {
 }
 
 .products-in-cart table tbody tr td {
+  vertical-align: middle;
   font-family: sans-serif;
   padding: 2rem .5rem;
 }
@@ -74,9 +75,9 @@ header span i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .products-in-cart table tbody tr .product .product-name span i {

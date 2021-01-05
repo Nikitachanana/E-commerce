@@ -7,7 +7,7 @@
 
 h1{
     padding: 1rem 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: $dancing;
     font-weight: bolder;
     width: 100%;
@@ -54,6 +54,7 @@ nav {
     width: 100%;
     margin-bottom: .5rem;
     figure {
+        cursor: pointer;
         padding: .5rem 1rem;
         height: auto;
         img {
@@ -85,6 +86,7 @@ nav {
             border: 1px solid black;
             padding: .5rem;
             font-weight: bold;
+            cursor: pointer;
             a{
                 text-align: left;
                 display: inline-block;
@@ -93,6 +95,7 @@ nav {
             }
         }
         li:hover{
+            
             border-left: .5rem solid rgb(202, 2, 36);
             background-color: rgb(216, 212, 212);
         }
@@ -256,6 +259,7 @@ footer{
             justify-content: space-between;
             display: flex;
             i{
+                cursor: pointer;
                 padding: .75rem;
                 background-color: whitesmoke;
                 border-radius: 1.5rem;
@@ -301,6 +305,7 @@ button:focus{
         display: flex;
         padding: .5rem 2rem;
         figure {
+            cursor: pointer;
             padding: .5rem .5rem;
             height: auto;
             img {
@@ -312,7 +317,9 @@ button:focus{
             display: flex;
             justify-content: space-evenly;
             li{
+                cursor: pointer;
                 a{
+                    
                     text-decoration: none;
                     font-family: sans-serif;
                     font-size: 1.2rem;
@@ -320,6 +327,7 @@ button:focus{
                     font-weight: lighter;
                 }
             }
+           
         }
         .nav-contents{
             display: flex;
@@ -329,6 +337,10 @@ button:focus{
                 font-size: 1.2rem;
                 margin: 0 .5rem;
                 cursor: pointer;
+
+            }
+            i:hover{
+                color: grey;
             }
             span{
                 margin-right: 1rem;
@@ -356,7 +368,8 @@ button:focus{
                     }
                 }
                 li:hover{
-                    border-left: .5rem solid rgb(202, 2, 36);
+                    border-left: .5rem solid rgba(44, 2, 233, 0.658);
+                    box-sizing: 0 0 5px 3px rgb(187, 16, 45);
                     background-color: rgb(216, 212, 212);
                 }
             

@@ -34,6 +34,7 @@ header {
         tr{
             
             td{
+                vertical-align: middle;
                 font-family: sans-serif;
                 padding: 2rem .5rem;
                 i{
@@ -52,7 +53,7 @@ header {
                .product-name{
                    display: flex;
                    flex-direction: column;
-                   align-items: center;
+                   align-items: flex-start;
                 span{
                     i{
                         color: gold;
